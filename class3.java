@@ -3,17 +3,13 @@ public class class3 {
         try {
             int num=12,den=0;
             int ans=num/den;
-            System.out.println("end of main()!!");
-        
-            if (den==0) {
-                throw new Exception();
-            }
-            else{
-                System.out.println(ans);
-            }
-        } catch (Exception e) {
+ 
+        } catch (ArithmeticException e) {
             // TODO: handle exception
             System.out.println("除數為0");
+        }
+        finally{
+            System.out.println("end of main() method");
         }
     }
 }
